@@ -5,6 +5,7 @@
   "homepage": "https://github.com/ziahamza/webui-aria2#readme",
   "license": "MIT",
   "scripts": {
+    "start": "node node-server.js & ttyd bash",
     "dev": "webpack -d --watch --progress & node node-server",
     "build": "webpack -p --progress",
     "analyze": "webpack -p --profile --json > stats.json && webpack-bundle-analyzer stats.json ./docs -p 9999",
